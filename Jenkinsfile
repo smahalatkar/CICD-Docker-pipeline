@@ -12,7 +12,7 @@ pipeline {
                 sh 'docker login -u skumar2408 -p kukku@240892'
                 sh "echo sameer"
                 sh "docker tag webapp:${env.BUILD_ID} skumar24/webapp:${env.BUILD_ID}"                
-                sh "docker push satyendrasingh/webapp:${env.BUILD_ID}"
+                sh "docker push skumar24/webapp:${env.BUILD_ID}"
           }
        }
     }

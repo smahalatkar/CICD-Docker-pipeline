@@ -19,3 +19,4 @@ pipeline {
           sh "docker run -p 8081:8080 -d my-apllication skumar24/webapp:${env.BUILD_ID}"
     }
 }
+}

@@ -16,7 +16,9 @@ pipeline {
           }
        }
        stage('Run Container on Jenkins Server'){
-          sh "docker run -p 8081:8080 -d my-apllication skumar24/webapp:${env.BUILD_ID}"
+          steps {
+               sh "docker run -p 8081:8080 -d my-apllication skumar24/webapp:${env.BUILD_ID}"
+          }
     }
 }
 }
